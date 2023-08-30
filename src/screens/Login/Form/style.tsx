@@ -14,16 +14,12 @@ export const Connected = styled.div`
   display: flex;
   align-items: center;
   gap: .5rem;
+  cursor: pointer;
 `
 
-export const ConnectedText = styled.a`
+export const ConnectedText = styled.p`
   font-size: var(--fz-small);
   color: #80CAFF;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `
 
 export const ConnectImg = styled.img`

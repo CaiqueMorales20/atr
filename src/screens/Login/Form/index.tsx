@@ -17,9 +17,9 @@ export default function Form() {
     <FormS>
       <Input name="Email" placeholder="Digite seu email" type="email" />
       <Input name="Senha" placeholder="Digite sua senha" type="password" />
-      <Connected>
-        <ConnectImg onClick={() => setChecked(!checked)} src={checked? Checked : Unhecked} alt="Continuar logado" />
-        <ConnectedText href='#'>Continuar conectado</ConnectedText>
+      <Connected onClick={() => setChecked(!checked)}>
+        <ConnectImg  src={checked? Checked : Unhecked} alt="Continuar logado" />
+        <ConnectedText>Continuar conectado</ConnectedText>
       </Connected>
       <Button />
       <Forgot>
