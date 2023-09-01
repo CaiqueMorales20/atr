@@ -1,6 +1,6 @@
 // Screens
-import Dashboard from "./screens/Dashboard";
-import Login from "./screens/Login";
+import Dashboard from './screens/Dashboard'
+import Login from './screens/Login'
 
 // Functional Component
 export default function App() {

@@ -1,4 +1,4 @@
-import { ButtonS, ButtonText } from "./style";
+import { ButtonS, ButtonText } from './style'
 
 // Functional Component
 export default function Button() {
@@ -7,5 +7,5 @@ export default function Button() {
     <ButtonS type="submit">
       <ButtonText>Entrar</ButtonText>
     </ButtonS>
-  );
+  )
 }
