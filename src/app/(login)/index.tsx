@@ -7,6 +7,7 @@ import { useState } from "react";
 export default function Login() {
   // Variables
   const [passwordVisible, setPasswordVisible] = useState(false)
+  const [saveInfo, setSaveInfo] = useState(false);
 
   // Rendering
   return (
@@ -15,7 +16,7 @@ export default function Login() {
         <Image className="mb-[47.5px]" src="/icon/logo.svg" alt="Logo ATR" width={164} height={277} />
         <h1 className="mb-[54px] text-[28px] text-[#101012] font-semibold text-center">Login</h1>
         {/* Form */}
-        <form className="w-[430px] mb-[45px] flex flex-col gap-[17px]">
+        <form className="w-[430px] mb-[20px] flex flex-col gap-[17px]">
           {/* Input */}
           <div className="flex flex-col gap-3">
             <label className="text-[16px] text-[#5A5A5D]">Email</label>
@@ -32,6 +33,13 @@ export default function Login() {
             </div>
           </div>
         </form>
+        {/* Forgot */}
+        <p className="text-[14px] text-[#504C57] mb-[45px] ">Esqueceu a senha ou primeiro acesso? <a href="#" className="text-[#80CAFF]">Clique aqui</a></p>
+        {/* Save */}
+        <div className="flex items-center mb-[26px] gap-[9px]">
+          <Image className="cursor-pointer" onClick={() => setSaveInfo(!saveInfo)} src={saveInfo ? "/icon/checked-true.svg" : "/icon/checked-false.svg"} alt="Salvar dados" width={18} height={18} />
+          <p className="text-[#80CAFF] text-[16px]">Continuar conectado</p>
+        </div>
         {/* Button */}
         <button className="py-[18px] w-[80%] mx-auto text-white font-semibold rounded-[8px] bg-[#80CAFF]">Entrar</button>
       </div>
